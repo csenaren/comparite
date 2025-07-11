@@ -1,0 +1,122 @@
+/*
+ * style.css
+ * This file contains all the custom styles for the Product Comparison Tool.
+*/
+
+/* ---- 1. Global Styles & Typography ---- */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font we imported */
+    background-color: #f8f9fa; /* A very light gray background to make cards pop */
+    color: #343a40; /* A dark gray for text, easier on the eyes than pure black */
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #212529;
+}
+
+/* ---- 2. Header & Footer Styles ---- */
+
+.app-header {
+    background-color: #ffffff; /* A clean white header */
+    border-bottom: 1px solid #dee2e6; /* A subtle bottom border */
+}
+
+.app-title {
+    font-weight: 700;
+    color: #0d6efd; /* Use Bootstrap's primary blue for the main title */
+}
+
+.app-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #6c757d; /* A muted gray for the subtitle */
+}
+
+.app-footer {
+    background-color: #343a40; /* A dark footer for contrast */
+    color: #e9ecef; /* Light text on the dark background */
+}
+
+.app-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.app-footer a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.app-footer a:hover {
+    color: #0d6efd; /* Highlight link on hover */
+}
+
+
+/* ---- 3. Product Card Styling ---- */
+
+.card {
+    border: none; /* Remove default card border */
+    border-radius: 10px; /* Nicely rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* A soft, modern shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card up on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* A more prominent shadow on hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-body .btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+
+/* ---- 4. Comparison Section Styling ---- */
+
+#comparison-section .card {
+    /* Comparison cards don't need the hover lift effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#comparison-section .card:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* The class for highlighting differences, applied by script.js */
+.highlight {
+    background-color: #fff3cd !important; /* A light, pleasant yellow */
+    border-left: 4px solid #ffc107; /* A solid left border to draw attention */
+    font-weight: 600;
+}
+
+
+/* ---- 5. Responsive Adjustments ---- */
+
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 1.8rem; /* Slightly smaller title on mobile */
+    }
+
+    .app-subtitle {
+        font-size: 1rem;
+    }
+}
