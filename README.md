@@ -6,7 +6,7 @@ Comparite is a web-based comparison tool built with modern frontend technologies
 
 Live Demo
 The project is deployed on Netlify and can be accessed here:
-🔗 Comparite Live Demo
+🔗 [Comparite Live Demo](https://incomparable-taiyaki-7dc417.netlify.app/)
 
 Technologies Used
 HTML5 - For structure and semantic markup
